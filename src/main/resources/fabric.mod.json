@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "empty-itemstack-fix",
+  "version": "${version}",
+  "name": "Empty ItemStack Fix",
+  "description": "Prevents crashes when trying to encode empty ItemStacks during entity save by returning an empty NBT instead of throwing.",
+  "authors": [
+    "generated"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/empty-itemstack-fix/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.emptyitemstackfix.EmptyItemStackFix"
+    ]
+  },
+  "mixins": [
+    "mixins.emptyitemstackfix.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10"
+  }
+}
